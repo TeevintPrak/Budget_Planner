@@ -8,13 +8,17 @@
 }
 
 :root {
-  --font-roboto: "Roboto Slab", serif;
-  --font-raleway: "Raleway", sans-serif;
+  --font-roboto: Helvetica, sans-serif;
+  --font-raleway: Helvetica, sans-serif;
 }
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  background: linear-gradient(
+    90deg,
+    rgb(7, 46, 82) 25%,
+    rgb(76, 13, 108) 75%
+  );
 }
 
 .app {
@@ -29,11 +33,7 @@ body {
 h1 {
   font-size: 3rem;
   letter-spacing: 0.9px;
-  background: linear-gradient(
-    90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
-  );
+  background-color: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,9 +50,9 @@ h1 {
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
-  background: #1f2123;
-  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  background: #473388;
+  *-webkit-box-shadow: 2px 2px 3px #1c1d1f, -2px -2px 3px #222527;
+  box-shadow: 2px 2px 3px #1c1d1f, -2px -2px 3px #222527;
 }
 
 .search input {
@@ -64,8 +64,8 @@ h1 {
   padding-right: 1rem;
 
   outline: none;
-  color: #a1a1a1;
-  background: #1f2123;
+  color: #f8f8f8;
+  background: #473388;
 }
 
 .search img {
@@ -154,7 +154,7 @@ h1 {
 
 .movie div:nth-of-type(3) {
   z-index: 2;
-  background-color: #343739;
+  background-color: #473388;
   padding: 16px 24px 24px 24px;
 
   position: absolute;
@@ -174,8 +174,8 @@ h1 {
 
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
-  font-family: "Roboto Slab", serif;
-  color: #f9d3b4;
+  font-family: Helvetica, serif;
+  color: #ffffff;
 }
 
 .movie:hover div:nth-of-type(2) {
